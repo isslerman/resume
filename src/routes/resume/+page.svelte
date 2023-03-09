@@ -7,10 +7,7 @@
 	import wedo_logo from '$lib/images/WeDoTechnologies.jpg';
 	import fintech_logo from '$lib/images/fintechlogo.jpg';
 	import bosshouse_logo from '$lib/images/bosshouse.png';
-	import email_icon from '$lib/images/email_icon.svg';
 	import Icon from '$lib/images/Icon.svelte';
-
-
 </script>
 
 <svelte:head>
@@ -30,46 +27,40 @@
 				/>
 			</div>
 			<!-- CONTACT -->
-			<div class="text-white text-xl underline underline-offset-8">CONTACT</div>
-			<ul>
+			<div class="text-white text-xl underline underline-offset-8 mb-4">CONTACT</div>
+			<ul class="mt-8">
 				<li>
-					<!-- email -->
-					<div class="text-white mt-2">
-						<Icon name="email" class="float-left" />
-						<span class="text-sm ml-1">
-							<a href="mailto:marcos@bosshouse.com.br?subject=Resume Contact&body=Hello Marcos,">marcos@bosshouse.com.br</a>
-						</span>
+					<!-- EMAIL -->
+					<div class="text-white mb-3 text-sm">
+						<Icon name="email" class="float-left mr-2 mt-1 align-middle" />
+						<a href="mailto:marcos@bosshouse.com.br?subject=Resume Contact&body=Hello Marcos,">marcos@bosshouse.com.br</a>
 					</div>
 				</li>
-			<li>
+				<li>
 					<!-- LOCATION -->
-					<div class="text-white">
-						<Icon name="location" class="float-left" />
-						<span class="text-sm text-left ml-1">São Paulo, Brazil</span>
+					<div class="text-white mb-3 text-sm">
+						<Icon name="location" class="float-left mr-2" />
+						<div class="text-sm">São Paulo, Brazil</div>
 					</div>
 				</li>
 				<li>
 					<!-- LINKEDIN -->
-					<div class="text-white">
-						<Icon name="linkedin" class="float-left" />						
-						<span class="text-sm text-left ml-1">
-							<a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marcosissler/">linkedin.com/in/marcosissler</a>
-						</span>
+					<div class="text-white mb-3 text-sm">
+						<Icon name="linkedin" class="float-left mr-2" />
+						<a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marcosissler/">linkedin.com/in/marcosissler</a>
 					</div>
 				</li>
 				<li>
 					<!-- GITHUB -->
-					<div class="text-white">
-						<Icon name="github" class="float-left" />						
-						<span class="text-sm text-left ml-1">
-							<a target="_blank" rel="noreferrer" href="https://github.com/isslerman">github.com/isslerman</a>
-						</span>
+					<div class="text-white text-sm">
+						<Icon name="github" class="float-left mr-2 mt-0" />
+						<a target="_blank" rel="noreferrer" href="https://github.com/isslerman">github.com/isslerman</a>
 					</div>
 				</li>
 			</ul>
 			<!-- SKILLS -->
 			<hr class="h-px my-8 bg-sky-800 border-0">
-			<div class="text-white  text-xl underline underline-offset-8">SKILLS</div>
+			<div class="text-white text-xl underline underline-offset-8 mb-4">SKILLS</div>
 			<ul class="mt-8">
 				<Skills title="DeFi" perc={85} />
 				<Skills title="Docker" perc={85} />
@@ -85,9 +76,9 @@
 				<Skills title="SQL/DBs" perc={100} />
 				<Skills title="Tokenization" perc={75} />
 			</ul>
-			<!-- END SKILLS -->
 			<hr class="h-px my-8 bg-sky-800 border-0">
-			<div class="text-white text-xl underline underline-offset-8">LANGUAGES</div>
+			<!-- LANGUAGES -->
+			<div class="text-white text-xl underline underline-offset-8 mb-4">LANGUAGES</div>
 			<ul class="mt-8">
 				<Languages title="Portuguese" perc={100} />
 				<Languages title="English" perc={75} />
@@ -108,7 +99,7 @@
 				<Title title="SUMMARY"></Title>
 				<div class="p-5 text-black">
 					<ul class="list-disc text-normal">
-						<li>With over 10 years of experience as a senior developer, I am actively seeking new opportunities in innovative projects that align with my interest in 
+						<li>With over 10 years of experience as a senior developer, I am looking for new opportunities in innovative projects that align with my interest in 
 							blockchain technologies, web3, DeFi and NFT.
 						</li>
 						<li>Over the past five years, I have gained extensive experience in the financial market by developing a blockchain bank mobile application that incorporated
