@@ -40,6 +40,8 @@ If you prefer you can deploy to Vercel, they have some free options too. More in
 npm run build
 ```
 
+Your static files can be found at /build directory
+
 ## More info about Svelte
 
 * All documentation you need
