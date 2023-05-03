@@ -11,7 +11,7 @@
 		 </label>
 		 <input class="hidden" type="checkbox" id="menu-toggle"> -->
 		 
-		 <div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
+		 <!-- <div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
 				<nav>
 					 <ul class="md:flex items-center justify-between text-base text-black pt-4 md:pt-0">
 							<li><a class="inline-block no-underline hover:text-blue-500 font-medium text-sm pt-2 px-4 lg:-ml-2" href="/">Home</a></li>
@@ -19,7 +19,7 @@
 							<li><a class="inline-block no-underline hover:text-blue-500 font-medium text-sm pt-2 px-4 lg:-ml-2" href="/resume">Resume</a></li>
 					 </ul>
 				</nav>
-		 </div>
+		 </div> -->
 		 <!-- Buttons -->
 		 <!-- <div class="order-2 md:order-3 flex flex-wrap items-center justify-end mr-0 md:mr-4" id="nav-content">
 				<div class="auth flex items-center w-full md:w-full">
