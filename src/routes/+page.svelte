@@ -10,7 +10,7 @@
 	import wedo_logo from '$lib/images/WeDoTechnologies.jpg';
 	import fintech_logo from '$lib/images/fintechlogo.jpg';
 	import bosshouse_logo from '$lib/images/bosshouse.png';
-	import profile_photo from '$lib/images/profile-photo.jpg';
+	import profile_photo from '$lib/images/profile-photo03.jpg';
 	import Icon from '$lib/images/Icon.svelte';
 
 	import favicon16 from '$lib/favicon/favicon-16x16.png';
@@ -19,6 +19,7 @@
 	const title = "Marcos Issler - Senior Developer";
 	const description = "Senior developer with 10+ years of experience seeking innovative opportunities in blockchain, web3, DeFi and NFT with expertise in financial markets.";
 	const keywords = "marcos issler, developer, blockchain, web3, architecture, bank, brazil, financial, fraud, hardhat, mobile, nodejs, solidity, trading, bot, robot, ia, chatgpt";
+	
 </script>
 
 <svelte:head>
@@ -35,16 +36,20 @@
 	<meta name="twitter:url" content={url}{base}>
 	<link rel="icon" type="image/png" sizes="32x32" href={favicon16}>
 	<link rel="icon" type="image/png" sizes="16x16" href={favicon32}>
+
+	<meta http-equiv="cache-control" content="max-age=31536000, immutable">
+
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	
 </svelte:head>
 
-<div class="bg-white rounded-xl mx-3 md:mx-20 my-5 p-10">
+<div class="bg-white rounded-xl p-4 w-full md:w-auto">
 	<div class="grid grid-cols-7">
 		<div class="col-span-2 bg-sky-700 px-5">
 			<!-- PICTURE -->
 			<div class="">
 				<img
-					class="rounded-full w-32 xl:w-auto mx-auto shadow-md 2xl:shadow-2xl border-2 lg:border-5 2xl:border-8 border-gray-100 m-5"
+					class="rounded-full w-32 xl:w-52 mx-auto shadow-md 2xl:shadow-2xl border-2 lg:border-5 2xl:border-4 border-gray-100 m-5"
 					src={profile_photo}
 					alt="Marcos Issler"
 				/>
@@ -54,7 +59,7 @@
 			<ul class="mt-8">
 				<li>
 					<!-- EMAIL -->
-					<div class="text-white mb-3 text-sm">
+					<div class="text-white mb-3 text-xs sm:text-sm">
 						<Icon name="email" class="float-left mr-2 mt-1 align-middle" />
 						<a href="mailto:marcos@bosshouse.com.br?subject=Resume Contact&body=Hello Marcos,">marcos@bosshouse.com.br</a>
 					</div>
