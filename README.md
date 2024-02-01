@@ -25,6 +25,10 @@ src/routes/+page.svelte - main content
 src/componentes - svelte components
 lib/images - images
 
+ICONS: 
+- copy the svg code to lib/images/Icon.svelte
+- https://www.svgrepo.com/svg/78847/passport
+
 
 ## Static site generation
  
