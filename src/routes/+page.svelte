@@ -55,7 +55,7 @@
 				/>
 			</div>
 			<!-- CONTACT -->
-			<div class="text-white text-xl underline underline-offset-8 mb-4">CONTACT</div>
+			<div class="text-white mt-20 text-2xl underline underline-offset-8 mb-4">PERSONAL</div>
 			<ul class="mt-8">
 				<li>
 					<!-- EMAIL -->
@@ -64,14 +64,7 @@
 						<a href="mailto:marcos@bosshouse.com.br?subject=Resume Contact&body=Hello Marcos,">marcos@bosshouse.com.br</a>
 					</div>
 				</li>
-				<li>
-					<!-- LOCATION -->
-					<div class="text-white mb-3 text-sm">
-						<Icon name="location" class="float-left mr-2" />
-						<div class="text-sm">São Paulo, Brazil</div>
-					</div>
-				</li>
-				<li>
+			<li>
 					<!-- LINKEDIN -->
 					<div class="text-white mb-3 text-sm">
 						<Icon name="linkedin" class="float-left mr-2" />
@@ -85,32 +78,49 @@
 						<a target="_blank" rel="noreferrer" href="https://github.com/isslerman">github.com/isslerman</a>
 					</div>
 				</li>
+				<li>
+					<!-- LOCATION -->
+					<div class="text-white mb-3 text-sm mt-3">
+						<Icon name="location" class="float-left mr-2" />
+						<div class="text-sm">São Paulo, Brazil</div>
+					</div>
+				</li>
+				<li>
+					<!-- NATIONALITY -->
+					<div class="text-white mb-3 text-sm">
+						<Icon name="citizen" class="float-left mr-2" />
+						<div class="text-sm">Nationality: Brazil / EU</div>
+					</div>
+				</li>
 			</ul>
 			<!-- SKILLS -->
 			<hr class="h-px my-8 bg-sky-800 border-0">
-			<div class="text-white text-xl underline underline-offset-8 mb-4">SKILLS</div>
+			<div class="text-white text-center text-2xl underline underline-offset-8 mb-4">SKILLS</div>
 			<ul class="mt-8">
-				<Skills title="DeFi" perc={85} />
-				<Skills title="Docker" perc={85} />
-				<Skills title="Hardhat" perc={50} />
-				<Skills title="Kafka" perc={25} />
-				<Skills title="MetaBase" perc={100} />
-				<Skills title="Node.js" perc={85} />
-				<Skills title="PHP" perc={90} />
-				<Skills title="Prisma" perc={50} />
-				<Skills title="REST API" perc={90} />
-				<Skills title="Solidity" perc={65} />
-				<Skills title="Svelte" perc={50} />
-				<Skills title="SQL/DBs" perc={100} />
-				<Skills title="Tokenization" perc={75} />
+				<Skills title="Golang" perc={60}/>
+				<Skills title="API Development" perc={100}/>
+				<Skills title="REST API" perc={100}/>
+				<Skills title="Database Management" perc={100}/>
+				<Skills title="Software Architecture" perc={80}/>
+				<Skills title="Docker" perc={100}/>
+				<Skills title="Git" perc={100}/>
+				<Skills title="HTML/CSS" perc={100}/>
+				<Skills title="AWS / Digital Ocean" perc={80}/>
+				<!-- <Skills title="MetaBase"/> -->
+				<Skills title="PHP" perc={80}/>
+				<Skills title="Svelte" perc={55}/>
+				<Skills title="Node.js" perc={45}/>
+				<Skills title="Solidity" perc={45}/>
+				<!-- <Skills title="Prisma"/> -->
+
 			</ul>
 			<hr class="h-px my-8 bg-sky-800 border-0">
 			<!-- LANGUAGES -->
 			<div class="text-white text-xl underline underline-offset-8 mb-4">LANGUAGES</div>
 			<ul class="mt-8">
-				<Languages title="Portuguese" perc={100} />
-				<Languages title="English" perc={75} />
-				<Languages title="Spanish" perc={50} />
+				<Languages title="Portuguese"/>
+				<Languages title="English"/>
+				<Languages title="Spanish"/>
 			</ul>
 			
 		</div>
