@@ -9,9 +9,9 @@
 </script>
 
 <li>
-  <div class="mb-1 text-base font-medium text-white">{title}</div>
+  <div class="mb-1 text-base font-medium text-white">- {title}</div>
   {#if showPerc}
-  <div class="w-full bg-gray-200 rounded-full h-0.5 mb-4 dark:bg-gray-700">
+  <div class="w-full bg-gray-200 rounded-full h-0.5 mb-4 dark:bg-gray-700 hideforprint">
     <div class="{color} h-0.5 rounded-full dark:{color}" style="width: {perc}%"></div>
   </div>
   {/if}

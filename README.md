@@ -29,6 +29,9 @@ ICONS:
 - copy the svg code to lib/images/Icon.svelte
 - https://www.svgrepo.com/svg/78847/passport
 
+Resume examples:
+- https://devsdata.com/resumes/
+
 
 ## Static site generation
  

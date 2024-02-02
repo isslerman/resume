@@ -17,18 +17,20 @@
 	import favicon32 from '$lib/favicon/favicon-32x32.png';
 
 	const title = "Marcos Issler - Senior Developer";
-	const description = "Senior developer with 10+ years of experience seeking innovative opportunities in blockchain, web3, DeFi and NFT with expertise in financial markets.";
-	const keywords = "marcos issler, developer, blockchain, web3, architecture, bank, brazil, financial, fraud, hardhat, mobile, nodejs, solidity, trading, bot, robot, ia, chatgpt";
+	const description = "Senior developer with 10+ years of experience, looking for new Golang opportunities. Expert in financial software development.";
+	const keywords = "marcos issler, golang developer, golang, café com golan, architecture, crypto, blockchain, web3, financial, brazil, bank, fraud detection, mobile, nodejs, solidity, trading, bot, robot, ia, chatgpt";
 	import certifcateFullCycle from '$lib/images/certificate-202311-fullcycle-goexpert.pdf';
 	
 </script>
 
 <svelte:head>
+	<!-- HTML Meta Tags -->
 	<title>{title}</title>
 	<meta name="description" content={description} />
 	<meta name="keywords" content={keywords} />
 
 	<meta property="og:title" content={title}>
+	<meta property="og:type" content="website">
 	<meta property="og:description" content={description}>
 	<meta property="og:image" content={url}{profile_photo}>
 	<meta property="og:url" content={url}{base}>
@@ -38,23 +40,30 @@
 	<link rel="icon" type="image/png" sizes="32x32" href={favicon16}>
 	<link rel="icon" type="image/png" sizes="16x16" href={favicon32}>
 
-	<meta http-equiv="cache-control" content="max-age=31536000, immutable">
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content={url}>
+	<meta property="twitter:url" content={url}{base}>
+	<meta name="twitter:title" content={title}>
+	<meta name="twitter:description" content={description}>
+	<meta name="twitter:image" content={url}{profile_photo}>
+
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
 
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-	
 </svelte:head>
 
 <div class="bg-white rounded-xl p-4 w-full md:w-auto">
 	<div class="grid grid-cols-12">
 		<div class="col-span-3 bg-sky-700 px-5">
 			<!-- PICTURE -->
-			<div class="">
 				<img
-					class="rounded-full w-16 xl:w-52 mx-auto shadow-md 2xl:shadow-2xl border-2 lg:border-5 2xl:border-4 border-gray-100 m-5"
+					class="rounded-full xl:w-52 mx-auto shadow-md 2xl:shadow-2xl border-2 lg:border-5 2xl:border-4 border-gray-100 m-5"
 					src={profile_photo}
 					alt="Marcos Issler"
 				/>
-			</div>
 			<!-- CONTACT -->
 			<div class="text-white mt-20 text-2xl underline underline-offset-8 mb-4">CONTACT</div>
 			<ul class="mt-8">
@@ -147,7 +156,7 @@
 			<!-- #1 -->
 			<div class="flex mt-8 text-black">
 				<div class="w-1/2 text-normal">
-					<img width="48"  class="float-left mr-2" src="{fintech_logo}" loading="lazy" height="48" alt="WeDo Technologies logo"> 
+					<img width="48"  class="float-left mr-2 hideforprint" src="{fintech_logo}" loading="lazy" height="48" alt="WeDo Technologies logo"> 
 					<p class="font-bold">Blockchain Fintech Company</p>
 					<p class="italic text-black">(Director of Innovation)</p>
 				</div>
@@ -164,7 +173,7 @@
 			<!-- #2 -->
 			<div class="flex mt-8 text-black">
 				<div class="w-1/2 text-normal">
-					<img width="48"  class="float-left mr-2" src="{fintech_logo}" loading="lazy" height="48" alt="WeDo Technologies logo"> 
+					<img width="48"  class="float-left mr-2 hideforprint" src="{fintech_logo}" loading="lazy" height="48" alt="WeDo Technologies logo"> 
 					<p class="font-bold">Blockchain Fintech Company</p>
 					<p class="italic text-black">(Director of Technology)</p>
 				</div>
@@ -181,7 +190,7 @@
 			<!-- #3 -->
 			<div class="flex mt-8 text-black">
 				<div class="w-1/2 text-normal">
-					<img width="48"  class="float-left mr-2" src="{fintech_logo}" loading="lazy" height="48" alt="WeDo Technologies logo"> 
+					<img width="48"  class="float-left mr-2 hideforprint" src="{fintech_logo}" loading="lazy" height="48" alt="WeDo Technologies logo"> 
 					<p class="font-bold">Blockchain Fintech Company</p>
 					<p class="italic text-black">(Senior Software Developer)</p>
 				</div>
@@ -198,7 +207,7 @@
 			<!-- #4 -->
 			<div class="flex mt-8 text-black">
 				<div class="w-1/2 text-normal">
-					<img width="48"  class="float-left mr-2" src="{bosshouse_logo}" loading="lazy" height="48" alt="WeDo Technologies logo"> 
+					<img width="48"  class="float-left mr-2 hideforprint" src="{bosshouse_logo}" loading="lazy" height="48" alt="WeDo Technologies logo"> 
 					<p class="font-bold">BossHouse Technologies</p>
 					<p class="italic text-black">(Entrepreneur)</p>
 				</div>
@@ -216,10 +225,10 @@
 			<div class="flex mt-8 text-black">
 				<div class="w-1/2 text-normal">
 					<a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/9394/">
-						<img width="48"  class="float-left mr-2" src="{wedo_logo}" loading="lazy" height="48" alt="WeDo Technologies logo"> 
+						<img width="48"  class="float-left mr-2 hideforprint" src="{wedo_logo}" loading="lazy" height="48" alt="WeDo Technologies logo"> 
 						<p class="font-bold">WeDo Technologies</p>
 					</a>
-					<p class="italic text-black">(Technical Team Lead)</p>
+					<p class="italic text-black">(Technical Lead)</p>
 				</div>
 				<div class="text-sky-700 w-1/2 text-sm font-bold text-right">2014 - 2016</div>
 			</div>
@@ -228,28 +237,10 @@
 					<li>Analysis, development and implementation of a revenue assurance migration project at <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/clarobrasil">CLARO Brazil (América Móvil)</a>.</li>
 					<li>Working as analyst and developer in a new project in <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/viva-bolivia">Nuevatel Bolivia</a>. Working in Spanish daily.</li>
 					<li>Technical Leader in TIM Brazil project, working daily with others tech leads, architects and POs. Technical advices and problems solving.</li>
+					<li>Analysis, development and implementation of the revenue assurance and fraud management in NET Telecom Brasil. I have significantly enhanced my proficiency in Oracle, SQL, ETL, Linux, Java, and project management.</li>					
 				</ul>
 			</div>
 			<!-- #5 WEDO -->
-			<div class="flex mt-8 text-black">
-				<div class="w-1/2 text-normal">
-					<a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/9394/">
-					<img width="48"  class="float-left mr-2" src="{wedo_logo}" loading="lazy" height="48" alt="WeDo Technologies logo"> 
-					<p class="font-bold">WeDo Technologies</p>
-					</a>
-					<p class="italic text-black">(Technical Lead)</p>
-				</div>
-				<div class="text-sky-700 w-1/2 text-sm font-bold text-right">2012 - 2013</div>
-			</div>
-			<div class="w-full mx-2 p-2 mt-2 text-black">
-				<ul class="list-disc text-normal ml-4 mt-2">
-					<li>
-						<p>Analysis, development and implementation of the revenue assurance and fraud management in NET Telecom Brasil.					
-							I have significantly enhanced my proficiency in Oracle, SQL, ETL, Linux, Java, and project management.</p>
-					</li>
-				</ul>
-			</div>
-
 			<!-- <Title title="PROJECTS"></Title> -->
 			<!-- #1 -->
 			<!-- <div class="mt-4">

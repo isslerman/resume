@@ -111,6 +111,70 @@ button:focus:not(:focus-visible) {
 	white-space: nowrap;
 }
 
+
+@page {
+	size: A4;
+	margin: 0cm;
+  }
+  
+@media print {
+	html, body {
+		width: 210mm;
+  		height: 297mm;
+	  	background: #FFF;
+	  	color: #000;
+	  	font-size: 7pt !important;
+	  	padding: 0 !important;
+		margin: 0 !important;
+		border: none;
+		line-height: normal !important;
+		zoom: 99%;
+	}
+
+	header, footer, aside, nav, form, iframe {
+		display: none !important;
+		margin: 0 !important;
+	}
+
+	div, h1, h2, h3, li {
+		background: #FFF;
+		background-color: #FFF !important;
+		color: #000 !important; 
+		font-size: 8pt !important;
+		margin: 0 !important; 
+		/* padding: 1 !important; */
+	}
+
+	h1 {
+		font-size: 20pt !important;
+	}
+	.page {
+	  margin: 0 !important;
+	  border: none;
+	  box-shadow: none;
+	}
+
+	.newpage {
+		page-break-before: always;
+	}
+
+	.hideforprint {
+		display: none;
+	}
+
+	.underline-offset-8{
+		text-underline-offset: 3px !important;
+	}
+
+	table, th, td {
+		border: 1px solid;
+		border-collapse: collapse;
+		text-align: left;
+		padding: 5px 10px;;
+	}
+}
+  
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
