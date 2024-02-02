@@ -1,10 +1,11 @@
 <script>
 	import logo from '$lib/images/svelte-logo.svg';
+	let year = new Date().getFullYear();
 </script>
 
 <footer>
 	<div class="text-sm">
-		@2023 BossHouse -
+		@{year} BossHouse -
 		<a href="https://madewithsvelte.com/website" target="_blank" rel="noreferrer">
 			Made with Svelte
 			<img src={logo} alt="Svelte Logo" width="14" class="float-right mx-2" /></a

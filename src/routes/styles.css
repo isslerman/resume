@@ -12,7 +12,9 @@
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
+	font-size: 18px;
 	color: var(--color-text);
+	-webkit-font-smoothing: antialiased;
 }
 
 body {

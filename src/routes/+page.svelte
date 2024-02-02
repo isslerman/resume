@@ -10,7 +10,7 @@
 	import wedo_logo from '$lib/images/WeDoTechnologies.jpg';
 	import fintech_logo from '$lib/images/fintechlogo.jpg';
 	import bosshouse_logo from '$lib/images/bosshouse.png';
-	import profile_photo from '$lib/images/profile-photo03.jpg';
+	import profile_photo from '$lib/images/profile-photo06.jpg';
 	import Icon from '$lib/images/Icon.svelte';
 
 	import favicon16 from '$lib/favicon/favicon-16x16.png';
@@ -19,6 +19,7 @@
 	const title = "Marcos Issler - Senior Developer";
 	const description = "Senior developer with 10+ years of experience seeking innovative opportunities in blockchain, web3, DeFi and NFT with expertise in financial markets.";
 	const keywords = "marcos issler, developer, blockchain, web3, architecture, bank, brazil, financial, fraud, hardhat, mobile, nodejs, solidity, trading, bot, robot, ia, chatgpt";
+	import certifcateFullCycle from '$lib/images/certificate-202311-fullcycle-goexpert.pdf';
 	
 </script>
 
@@ -44,18 +45,18 @@
 </svelte:head>
 
 <div class="bg-white rounded-xl p-4 w-full md:w-auto">
-	<div class="grid grid-cols-7">
-		<div class="col-span-2 bg-sky-700 px-5">
+	<div class="grid grid-cols-12">
+		<div class="col-span-3 bg-sky-700 px-5">
 			<!-- PICTURE -->
 			<div class="">
 				<img
-					class="rounded-full w-32 xl:w-52 mx-auto shadow-md 2xl:shadow-2xl border-2 lg:border-5 2xl:border-4 border-gray-100 m-5"
+					class="rounded-full w-16 xl:w-52 mx-auto shadow-md 2xl:shadow-2xl border-2 lg:border-5 2xl:border-4 border-gray-100 m-5"
 					src={profile_photo}
 					alt="Marcos Issler"
 				/>
 			</div>
 			<!-- CONTACT -->
-			<div class="text-white mt-20 text-2xl underline underline-offset-8 mb-4">PERSONAL</div>
+			<div class="text-white mt-20 text-2xl underline underline-offset-8 mb-4">CONTACT</div>
 			<ul class="mt-8">
 				<li>
 					<!-- EMAIL -->
@@ -68,14 +69,14 @@
 					<!-- LINKEDIN -->
 					<div class="text-white mb-3 text-sm">
 						<Icon name="linkedin" class="float-left mr-2" />
-						<a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marcosissler/">linkedin.com/in/marcosissler</a>
+						<a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marcosissler/">Linkedin</a>
 					</div>
 				</li>
 				<li>
 					<!-- GITHUB -->
 					<div class="text-white text-sm">
 						<Icon name="github" class="float-left mr-2 mt-0" />
-						<a target="_blank" rel="noreferrer" href="https://github.com/isslerman">github.com/isslerman</a>
+						<a target="_blank" rel="noreferrer" href="https://github.com/isslerman">Github</a>
 					</div>
 				</li>
 				<li>
@@ -99,53 +100,46 @@
 			<ul class="mt-8">
 				<Skills title="Golang" perc={60}/>
 				<Skills title="API Development" perc={100}/>
-				<Skills title="REST API" perc={100}/>
+				<Skills title="REST/GraphQL/gRPC" perc={100}/>
 				<Skills title="Database Management" perc={100}/>
 				<Skills title="Software Architecture" perc={80}/>
-				<Skills title="Docker" perc={100}/>
-				<Skills title="Git" perc={100}/>
-				<Skills title="HTML/CSS" perc={100}/>
+				<hr class="h-px my-4 w-1/2 m-auto bg-sky-800 border-0">
+				<Skills title="Docker / Git / HTML / CSS" perc={100}/>
 				<Skills title="AWS / Digital Ocean" perc={80}/>
+				<hr class="h-px my-4 w-1/2 m-auto bg-sky-800 border-0">
+				<Skills title="Pine Script" perc={100}/>
+				<Skills title="Solidity" perc={45}/>
 				<!-- <Skills title="MetaBase"/> -->
+				<hr class="h-px my-4 w-1/2 m-auto bg-sky-800 border-0">
 				<Skills title="PHP" perc={80}/>
 				<Skills title="Svelte" perc={55}/>
 				<Skills title="Node.js" perc={45}/>
-				<Skills title="Solidity" perc={45}/>
 				<!-- <Skills title="Prisma"/> -->
-
-			</ul>
+			</ul>			
+			<!-- Languages -->
 			<hr class="h-px my-8 bg-sky-800 border-0">
-			<!-- LANGUAGES -->
-			<div class="text-white text-xl underline underline-offset-8 mb-4">LANGUAGES</div>
+			<div class="text-white text-center text-2xl underline underline-offset-8 mb-4">LANGUAGES</div>
 			<ul class="mt-8">
-				<Languages title="Portuguese"/>
-				<Languages title="English"/>
-				<Languages title="Spanish"/>
+				<Skills title="Portuguese" perc={100}/>
+				<Skills title="English" perc={80}/>
+				<Skills title="Spanish" perc={60}/>
 			</ul>
-			
 		</div>
-		<div class="col-span-5 bg-white p-5">
+		<div class="col-span-9 bg-white p-5">
 			<!-- NAME - TITLE -->
 			<div class="bg-gray-200 w-full p-5 text-center">
 				<h1 class="text-5xl text-black underline underline-offset-8">Marcos Issler</h1>
-				<h2 class="text-base text-black pt-4">Architecture Developer | Web3 Enthusiast | Crypto Developer</h2>
+				<h2 class="text-base text-black pt-4">Golang Developer | Microservices Architecture | Crypto Enthusiast</h2>
 			</div>
 			<div>
 				<!-- SUMMARY -->
 				<Title title="SUMMARY"></Title>
 				<div class="p-5 text-black">
-					<ul class="list-disc text-normal">
-						<li>With over 10 years of experience as a senior developer, I am looking for new opportunities in innovative projects that align with my interest in 
-							blockchain technologies, web3, DeFi and NFT.
-						</li>
-						<li>Over the past five years, I have gained extensive experience in the financial market by developing a blockchain bank mobile application that incorporated
-							 a range of features, including digital banking, payment systems, KYC/AML, DeFi investments, a crypto exchange integrated with Binance and token issuance. 
-							 Prior to this, I worked in revenue assurance and fraud management in the telecommunications industry.
-						</li>
-						<li>As a dedicated and self-taught professional, I have excelente analytical and problem-solving skills and  enjoy overcoming challenges. 
-							I am also skilled in communications and creativity, and am passionate about researching new solutions.
-						</li>
-					</ul>
+						Senior developer with 10+ years of experience, looking for new Golang opportunities. Expert in financial software development, 
+							delivered a comprehensive digital bank mobile app for a fintech company. The app included digital banking, payment systems, KYC/AML, 
+							DeFi, and cryptocurrency exchange integrated with Binance. Previously, worked on revenue assurance and fraud management in telecom industry. 
+							As a self-taught professional, I excel at analysis, problem-solving, and overcoming challenges. 
+							I also have strong communication and creativity skills, and a passion for finding new solutions.
 				</div>
 			</div>
 			<!-- EXPERIENCE -->
@@ -248,8 +242,12 @@
 				<div class="text-sky-700 w-1/2 text-sm font-bold text-right">2012 - 2013</div>
 			</div>
 			<div class="w-full mx-2 p-2 mt-2 text-black">
-				<p>Analysis, development and implementation of the revenue assurance and fraud management in NET Telecom Brasil.					
-					I have significantly enhanced my proficiency in Oracle, SQL, ETL, Linux, Java, and project management.</p>
+				<ul class="list-disc text-normal ml-4 mt-2">
+					<li>
+						<p>Analysis, development and implementation of the revenue assurance and fraud management in NET Telecom Brasil.					
+							I have significantly enhanced my proficiency in Oracle, SQL, ETL, Linux, Java, and project management.</p>
+					</li>
+				</ul>
 			</div>
 
 			<!-- <Title title="PROJECTS"></Title> -->
@@ -269,9 +267,12 @@
 				</div>
 			</div> -->
 
-			<!-- EDUCATION -->
-			<Title title="EDUCATION"></Title>
+			<!-- EDUCATION / CERTIFICATES -->
+			<Title title="EDUCATION / CERTIFICATES"></Title>
 			<ul class="list-disc text-normal ml-4 mt-2">
+				<EducationCards title="FullCycle" name="Go Expert" link={certifcateFullCycle} />
+				<EducationCards title="Udemy" name="Working with Microservices in Go" link="https://www.udemy.com/certificate/UC-55cd51b0-2dff-4703-a89b-ddefc1022bef" />
+
 				<EducationCards title="Computer Science" name="Universidade Presbiteriana Mackenzie" link="https://www.mackenzie.br" />
 				<EducationCards title="Engineering Course" name="Universidade Presbiteriana Mackenzie" link="https://www.mackenzie.br" />
 				<EducationCards title="High School" name="Colégio Magno" />
